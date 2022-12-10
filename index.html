@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <hr />
+  <title>David's Quiz Board</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/quizboard.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1><strong>Welcome to David's Quiz Board</strong></h1>
+    <div id="div1">
+      <img src="images/quiz_image.jfif" alt="JS" title="Image of quiz time" width="535" height="250" id="img1">
+      <img src="images/goodluck.jpeg" alt="JS" title="Image of goodluck" width="535" height="250" id="img2">
+      <div id="div2">
+        <button class="btn btn-outline-primary btn-lg" id="btn1">Hide</button>
+        <button class="btn btn-outline-primary btn-lg" id="btn2">Show</button>
+        <button class="btn btn-outline-primary btn-lg" id="btn3">Toggle</button>
+      </div>
+    </div>
+    <p>
+      <hr>
+      Welcome to the Quiz board.
+      As a user, you will see the multi-choice questions when the website
+      loads. You will be required to answer the multi-choice answers on the
+      website. Each question will have a number of points awarded when
+      scored right.At the end of taking the Quiz,the final score will be displayed at the bottom.
+    </p>
+    <P>
+      <legend><strong>Instructions to the Quiz</strong></legend>
+    <ol>
+      <li>Answer all questions to the best of your understanding.</li>
+      <li>This is an online Quiz and so its paperless.</li>
+      <li>This Quiz is not timed but ensure that you finish today by 4pm(EAT).</li>
+      <li>At the end of answers submission,your final score will display at the bottom of this page and you will be graded
+        by the teacher in the overall final exam.</li>
+        <br>
+        <p><em>All the best in this Quiz and good luck!</em></p>
+    </ol>
+    </P>
+    <hr />
+    <div class="container">
+      <form action="" id="#myform">
+        <p id="p1">1.What is the command for commits on git bash or VsCode terminal?(2 marks)<br>
+          <input class="form-check-input ouranswers" type="radio" name="optionOne" id="ans_one_a" value="2" required>
+          <label class="form-check-label" for="ans_one_a">git commit -m "</label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionOne" id="ans_one_b" value="0" />
+          <label class="form-check-label" for="ans_one_b"> git push </label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionOne" id="ans_one_c" value="0" />
+          <label class="form-check-label" for="ans_one_c"> git add . </label>
+        </p>
+        <br />
+        <p id="p1">
+          2.What is the short form of HyperText Markup Language?(2 marks)<br />
+          <input class="form-check-input ouranswers" type="radio" name="optionTwo" id="ans_two_a" value="0" />
+          <label class="form-check-label" for="ans_two_a">HMTL </label><br />
+          <input class="form-check-input ouranswers" type="radio" name="optionTwo" id="ans_two_b" value="0" />
+          <label class="form-check-label" for="ans_two_b"> XTML </label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionTwo" id="ans_two_c" value="2" />
+          <label class="form-check-label" for="ans_two_c"> HTML </label>
+        </p>
+        <br />
+        <p id="p1">
+          3.Can your website work with styles and logic without linking the
+          jss and css ?(2 marks)<br />
+          <input class="form-check-input ouranswers" type="radio" name="optionThree" id="ans_three_a" value="0">
+          <label class="form-check-label" for="ans_three_a"> Yes</label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionThree" id="ans_three_b" value="2">
+          <label class="form-check-label" for="ans_three_b"> No </label>
+        </p>
+        <br />
+        <p id="p1">
+          4.Can a website without Javascript,jQuerry and CSS be interactive?(2
+          marks)<br />
+          <input class="form-check-input ouranswers" type="radio" name="optionFour" id="ans_four_a" value="0">
+          <label class="form-check-label" for="ans_four_a"> Yes</label> <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionFour" id="ans_four_b" value="2">
+          <label class="form-check-label" for="ans_four_b"> No </label>
+        </p>
+        <br />
+        <p id="p1">5.What is the full name of CSS? (2 marks)<br />
+          <input class="form-check-input ouranswers" type="radio" name="optionFive" id="ans_five_a" value="0">
+          <label class="form-check-label" for="ans_five_a">Cover Styling Sheet</label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionFive" id="ans_five_b" value="2">
+          <label class="form-check-label" for="ans_five_b">Cascade Styling Sheet</label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionFive" id="ans_five_c" value="0">
+          <label class="form-check-label" for="ans_five_c">JavaScript</label>
+        </p>
+        <br />
+        <p id="p1">6.which method returns the character at a specified index? (2 marks)<br />
+          <input class="form-check-input ouranswers" type="radio" name="optionSix" id="ans_six_a" value="0">
+          <label class="form-check-label" for="ans_five_a">characterAt()</label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionSix" id="ans_six_b" value="2">
+          <label class="form-check-label" for="ans_five_b">charAt()</label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionSix" id="ans_six_c" value="0">
+          <label class="form-check-label" for="ans_five_c">getCharAt()</label>
+        </p>
+        <br />
+        <p id="p1">7.In JS what do we use for calling the expression for Function Defination? (2 marks)<br />
+          <input class="form-check-input ouranswers" type="radio" name="optionSeven" id="ans_five_a" value="0">
+          <label class="form-check-label" for="ans_seven_a">Function declarationt</label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionSeven" id="ans_five_b" value="0">
+          <label class="form-check-label" for="ans_seven_b">Function prototype</label>
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionSeven" id="ans_five_c" value="2">
+          <label class="form-check-label" for="ans_seven_c">Function Literal</label>
+        </p>
+        <br />
+        <p id="p1">
+          8.jQuery is a JavaScript library that says:Write less,do more and is open source and compatible with almost
+          all modern browsers.(2
+          marks)
+          <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionEight" id="ans_eight_a" value="2">
+          <label class="form-check-label" for="ans_eight_a"> Yes</label> <br />
+          <input class="form-check-input ouranswers" type="radio" name="optionEight" id="ans_eight_b" value="0">
+          <label class="form-check-label" for="ans_eight_b"> No </label>
+        </p>
+        <br />
+        <div class="container text-center my-3">
+          <button type="button" class="btn btn-outline-primary btn-lg" id="complete">SUBMIT</button>
+          <button type="button" class="btn btn-outline-primary btn-lg" id="clear" onclick="fun()">RESET</button>
+          <button type="button" class="btn btn-outline-primary btn-lg"
+            onClick="window.location.href=window.location.href">REFRESH PAGE</button>
+        </div>
+        <p id="p2">
+          <img src="images/final_score.jpeg" alt="JS" title="Image of Final score" width="500" height="100" id="img3">
+        </p>
+        <div class="container d-none" id="scorepost">
+          <div class="card text-center outline-light mb-3">
+            <div class="card-body text-primary">
+              <h2 class="card-title outline-dark">Bravo!Thank you for taking the Quiz.
+                <p class="card-text" id="scorecard"></p>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <br />
+      </form>
+    </div>
+    <br />
+    <div class="container">
+      <hr />
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; &lt; &lt; &COPY;<a
+          href=https://dmuthui.github.io/coverletter>David Muthui 2022</a>&gt;&gt;&gt;</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" type="text/Javascript"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="js/quizboard.js"></script>
+</body>
+
+</html>
